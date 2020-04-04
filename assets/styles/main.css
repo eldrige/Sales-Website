@@ -1,0 +1,100 @@
+:root{
+--light-gray: #2b3032a1;
+--primary-color: #45ccb8;
+--border: #2b303218;
+--text-color: #ff686b;
+}
+/* for varaibles, they are defined at the root to get a global scope */
+
+.primary-color{
+    color: var(--primary-color);
+}
+.bg-primary-color{
+    background-color: var(--primary-color) !important;
+}
+.text-color{
+    color: var(--text-color)
+}
+/* header styling */
+header{
+    background-color: var(--primary-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header .site-title{
+
+}
+
+.container .dropdown-toggle,
+.container .dropdwon-item{
+    font-size: 0.7em;
+}
+.header-links a{
+    font-size: 0.9rm;
+    text-decoration: none;
+    color: white;
+}
+/* navigation menu */
+.navbar-nav{
+    padding: 0.8em 0em;
+}
+.navbar-nav .nav-link{
+    font-size: 0.9em;
+    color: var(--light-gray) !important;
+}
+.navbar-nav .nav-item .nav-link{
+    padding: 0 1.3em;
+}
+/* slider one */
+.site-slider{
+    position: relative;
+}
+.position-top{
+    position: absolute;
+    top: 50%;
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next{
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    color: #fff;
+    margin: 0 1rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.right-0{
+    right: 0;
+}
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+    opacity: 1;
+}
+/* slick dots */
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+.slick-dots li{
+    margin: 0 0.6rem;
+}
+.slick-dots button{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    padding: 0;
+    border: none;
+    background-color: white;
+    text-indent: -99999px;
+    border-radius: 100%;
+}
+.slick-dots li.slick:active button{
+    transform: scale(2.5);
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.205) ;
+}
