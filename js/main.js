@@ -5,5 +5,17 @@ $('.slider-one')
     autoplay: true,
     autoplaySpeed: 3000,
     dots: true,
-    prevArrow: ""
+    prevArrow: ".site-slider .slider-btn .prev",
+    nextArrow: ".site-slider .slider-btn .next"
 })
+// second slider
+// $('.slider-two')
+// .not('.slick-initialized')
+// .slick({
+//     prevArrow: ".site-slider-two  .prev",
+//     nextArrow: ".site-slider-two  .next",
+//     slideToShow: 6,
+//     slideToScroll: 1,
+//     autoplaySpeed: 2000
+// })
+
